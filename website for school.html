@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GAME FOR FREE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            background-color: #444;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <main>
+        <h2>About This Page</h2>
+        <p>This is a simple HTML template to get you started. You can customize it however you like!</p>
+        
+        <h3>Features:</h3>
+        <ul>
+            <li>Responsive design</li>
+            <li>Clean layout</li>
+            <li>Easy to customize</li>
+        </ul>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
+    <main>
+    <h2>Play My Game</h2>
+    
+    <!-- Option 1: Embed game in an iframe -->
+    <iframe src="game/index.html" width="800" height="600" frameborder="0"></iframe>
+    
+    <!-- Option 2: Embed game directly in a div -->
+    <div id="game-container">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+    </div>
+    <script src="My-Summer-Car-AnkerGames.js"></script>
+</main>
+<main>
+    <h2>Play My Game</h2>
+    <div id="unity-container" style="width: 960px; height: 600px; margin: auto;">
+        <canvas id="unity-canvas"></canvas>
+    </div>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+        UnityLoader.instantiate("unity-container", "Build/game.json");
+    </script>
+</main>
+<main>
+    <h2>Download My Game</h2>
+    <p>Click the button below to download the game:</p>
+    <a href="My-Summer-Car-AnkerGames.js" download>
+        <button style="padding: 10px 20px; font-size: 16px; cursor: pointer;">
+            Download Game
+        </button>
+    </a>
+</main>
+</body>
+</html>
